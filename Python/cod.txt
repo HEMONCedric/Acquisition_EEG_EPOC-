@@ -1,0 +1,20 @@
+python.exe CyKITv2.py 127.0.0.1 12991 6 info+confirm
+
+USB Name: EEG Signals
+
+USB Serial: UD201603030021A8
+
+Key Model #: 6
+
+Battery Level: 0
+
+
+                    #0 EPOC                                  0x00 (d.000)
+                    #1 EPOC+ 128hz 16bit - MEMS off          0x82 (d.130)
+                    #2 EPOC+ 128hz 16bit - MEMS 32hz 16bit   0x86 (d.134)
+                    #3 EPOC+ 128hz 16bit - MEMS 64hz 16bit   0x8A (d.138)
+                    #4 EPOC+ 128hz 16bit - MEMS 128hz 16bit  0x8E (d.142)
+                    #5 EPOC+ 256hz 16bit - MEMS off          0xE2 (d.226)
+                    #6 EPOC+ 256hz 16bit - MEMS 32hz 16bit   0xE6 (d.230)
+                    #7 EPOC+ 256hz 16bit - MEMS 64hz 16bit   0xEA (d.234)
+                    #8 EPOC+ 256hz 16bit - MEMS 128hz 16bit  0xEE (d.238)

@@ -1,0 +1,90 @@
+
+clear classes
+addpath_recurse();
+CyKITv2 = py.importlib.import_module('CyKITv2');
+
+%iinitiation of Epoc + device
+py.CyKITv2.main();
+
+% plotting of gyroscopic values
+x = zeros(1,30000);
+n = 1;
+
+
+%the baseline values changes as sensor readings and gyroscopic readings are
+%not seperated.
+    n=1:1024
+
+    while n <= 1024,
+    
+     b =[b cell2mat(cell(py.CyKITv2.get_data()))];
+     
+     
+    end 
+     
+    figure(1);hold('on');
+     for i=1:size(b,2)
+         plot(n,b(:,i))
+     end
+     
+     
+     
+     
+     
+     %      if b(2) == 32,          
+%          x(n) = abs(4.2 - ( (4201.02564096001 - b(8) ) * .128));
+%          plot(x(1:n));
+%          drawnow;
+%          n = n + 1;
+%        
+         
+         
+         
+         
+ 
+     
+
+% 
+% % Plot the values from the sensors
+%  baseline = 4201.0256409600;
+%  
+%  %while n <= 30000,
+%      
+%      % b = cell2mat(cell(py.CyKITv2.get_data()));
+%       if b(2) == 16,                      
+%           x(n) = abs(floor(baseline/1000)- ( (baseline - b(4) ) * .128));
+%           plot(x(1:n));
+%          % drawnow;
+%           baseline = (baseline + b(4) + 4201.02564096001)/3; 
+%           n = n + 1;
+%           %Computational moving average
+%          m1 = rand(b(2),30000);
+%          m2 = rand(b(2),30000);
+%          m3 = rand(b(2),30000);
+%          a={m1,m2,m3};
+%          y= cat(3,a{:});
+%          PlottedMeanAverage = mean(y,3);
+%          plot(x(1:PlottedMeanAverage));
+%          drawnow; 
+%          
+%          
+%       end
+% end
+%  %end
+% 
+%  AF3 --> b(3)
+
+% 
+% updates the baseline readings for the sensors
+% 
+  %if (init_baseline == false),
+   %       baseline[select_contact] = (baseline[select_contact] + parseFloat(contact[select_contact]) + 4201.02564096001)/3;
+  
+  %else
+        %  baseline[select_contact] = abs(parseFloat(contact[select_contact]));
+  
+  %end
+
+
+
+
